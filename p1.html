@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>let and const over var</h3>
+     <h4>try - logical block iw written in try and once the error is handled in catch then it does n't stop the execution if the error is there also</h4>
+    <!-- <script>
+        if(10 < 40){
+            const x = 120; //var => global scope variable, let and const => local scope/ block scope variables
+            document.write(`<h1> Inside the block = ${x}</h1>`);
+        }
+        document.write(`<h1> Outside the block = ${x} </h1>`); //let or const => Referance error
+    </script> -->
+    <script>
+        try{
+            if(10 < 40){
+            const x = 120; //var => global scope variable, let and const => local scope/ block scope variables
+            document.write(`<h1>Inside the block = ${x}</h1>`);
+        }
+        document.write(`<h1>Outside the block = ${x} </h1>`);
+        }catch(error){
+            console.log('error =', error);
+        }
+        document.write('<h1>block after the try catch</h1>')
+    </script>
+</body>
+</html>
